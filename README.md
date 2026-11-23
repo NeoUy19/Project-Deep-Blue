@@ -1,6 +1,6 @@
 # Deep Blue Dive
 
-A four-player Arduino game for our CS 361 group project. Two teams take turns as **Scientists**, who steer a research submarine, and **Invaders**, who attack it. The Invaders send secret coordinates, and the Scientists hear them as buzzer beeps and must decode them in time. If they get it wrong, they have to dodge torpedoes on the LCD.
+A four-player Arduino game for our CS 362 group project. Two teams take turns as **Scientists**, who steer a research submarine, and **Invaders**, who attack it. The Invaders send secret coordinates, and the Scientists hear them as buzzer beeps and must decode them in time. If they get it wrong, they have to dodge torpedoes on the LCD.
 
 The repo also contains **PDBSite**, a small companion website with the story behind the game and the rules.
 
