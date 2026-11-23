@@ -1,0 +1,14 @@
+.ascii-bg{
+    position:fixed;
+    inset:0;
+    z-index: -1;
+    pointer-events: none;
+    overflow: hidden;
+    opacity: 50% ;
+
+}
+
+.ascii-bg pre{
+    font-family: monospace;
+    font-size: 1.66vw;
+}

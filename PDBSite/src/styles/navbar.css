@@ -1,0 +1,32 @@
+nav {
+    background-color: color-mix(in srgb,var(--color-bg) 50%, transparent);
+    z-index: 1;
+    position: sticky;
+    top:0;
+}
+nav ul{
+    list-style: none;
+    max-width:25rem;
+    margin-inline: auto;
+    padding:0;
+    display:flex;
+    justify-content: center;
+
+}
+nav li{
+    flex:1;
+    text-align: center;
+}
+
+nav a{
+    text-decoration: none;
+    color: var(--text-color);
+
+}
+nav a:hover{
+    font-weight: bold;
+}
+nav a.active{
+    text-decoration: underline;
+    text-decoration-thickness: .1rem;
+}

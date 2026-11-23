@@ -1,0 +1,21 @@
+.homemaindiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-top: 20vh;
+}
+
+.explain{
+    max-width: 60ch;
+    text-align: center;
+    font-size: .75rem;
+}
+.idk{
+    font-size: .5rem;
+}
+
+.qr{
+    height: auto;
+    width: 5rem;
+}

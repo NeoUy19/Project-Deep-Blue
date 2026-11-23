@@ -1,0 +1,42 @@
+.howtoplay {
+    padding-inline: 1rem;
+}
+.howtoplay h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+
+.howtoplay ol {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(24rem, 100%), 1fr));
+    gap: 1.5rem;
+    padding: 0;
+    max-width: 60rem;
+    margin-inline: auto;
+}
+
+.howtoplay li {
+    display: grid;
+    container-type: inline-size;
+}
+.howtoplay li img,
+.howtoplay li p {
+    grid-area: 1 / 1;
+}
+
+.howtoplay li img {
+    width: 100%;
+    aspect-ratio: 8 / 5;
+    object-fit: cover;
+}
+
+.howtoplay li p {
+    align-self: stretch;
+    display: flex;
+    align-items: center;
+    margin: 0;
+    padding: 16% 6% 5% 22%;
+    font-size: clamp(0.65rem, 2.75cqi, 0.85rem);
+    line-height: 1.3;
+}

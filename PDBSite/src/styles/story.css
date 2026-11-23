@@ -1,0 +1,84 @@
+.story {
+    padding-inline: 1rem;
+    padding-bottom: 3rem;
+}
+.story h1 {
+    text-align: center;
+    font-size: clamp(1.5rem, 5vw, 2.5rem);
+}
+
+/* Each chapter is centred and capped in width, like the How to Play grid */
+.chapter {
+    max-width: 60rem;
+    margin: 0 auto 3rem;
+}
+.chapter h2 {
+    color: var(--color-accent);
+    font-size: clamp(1.15rem, 3.5vw, 1.6rem);
+    border-bottom: 2px solid color-mix(in srgb, var(--color-accent) 40%, transparent);
+    padding-bottom: 0.5rem;
+}
+
+/* The panels: 3 across on desktop, fewer on smaller screens, no media query */
+.panels {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(15rem, 100%), 1fr));
+    gap: 1rem;
+}
+
+/* One panel: a translucent "glass" card so the reef shows through */
+.panel {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    min-height: 6rem;
+    padding: 2.25rem 1rem 1.25rem;
+    border-radius: 0.75rem;
+    border: 1px solid color-mix(in srgb, var(--color-accent) 35%, transparent);
+    background-color: color-mix(in srgb, var(--color-bg) 80%, transparent);
+    backdrop-filter: blur(4px);
+}
+.panel p {
+    margin: 0;
+    line-height: 1.4;
+}
+
+/* The number badge sits in the top-left corner of its panel.
+   position: absolute is measured from the nearest positioned ancestor,
+   which is .panel (position: relative above). */
+.panel-number {
+    position: absolute;
+    top: 0.5rem;
+    left: 0.5rem;
+    width: 1.6rem;
+    height: 1.6rem;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background-color: var(--color-accent);
+    color: var(--color-bg);
+    font-weight: bold;
+    font-size: 0.85rem;
+}
+/* Danger panels in chapter 3 */
+.panel.alert {
+    border-color: var(--color-alert);
+    background-color: color-mix(in srgb, var(--color-alert) 18%, var(--color-bg));
+}
+.panel.alert .panel-number {
+    background-color: var(--color-alert);
+}
+
+.story-cta {
+    text-align: center;
+    font-size: 1.1rem;
+}
+.story-cta a {
+    color: var(--color-accent);
+}
